@@ -106,7 +106,7 @@
 
 .nav{
   margin-top: 270px;
- background-color: black;
+ 
   color: #ffffff;
   min-height: 40px;
 }
@@ -114,15 +114,20 @@ ul li{
   display: inline-block;
   font-size: 20px;
   float: right;
- background-color: rgba(256,73,28,0.6);
+ background-color: rgb(139,69,19);
  position: relative;
  padding-left: 50px;
  padding-right: 50px;
  min-height: 40px;
 
 }
+.form{
+  margin-top: 20px;
+    background-color: rgb(139,69,19);
+   border-radius: 9%;
+}
 .left-panel{
-  background-color: green;
+ 
   width: 50%;
    display: flex;
  
@@ -130,15 +135,52 @@ ul li{
   align-items: center;
   padding: 0px;
 }
-.ride-input{
+.create-ride-header{
+  font-family: Poppins-Regular;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-  min-height: 35px;
-  border-radius: 5%;
 }
 .form-input{
-  margin-top: 20px;
+ width: 100%;
+  position: relative;
+  margin-bottom: 30px;
 }
+.ride-input{
+ font-family: Poppins-Regular;
+  font-size: 20px;
+  color: #000000;
+
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 25px;
+}
+.create_ride{
+   font-size: 16px;
+  color: black;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 25px;
+}
+/*right panel*/
+.right-panel{
+  top:0;
+  width: 30%;
+  float: right;
+}
+/*end of right panel*/
+
 /*end of driver page*/
 @media only screen and (max-width: 1000px) {
 
