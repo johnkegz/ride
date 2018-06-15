@@ -9,49 +9,224 @@
 	<div class="outer3">
 		<div class="wrap-login3">
 				RIDE MY WAY
+				<img src="img/k.jpg" class="profile-pic" alt="kegz">
+
 			</div>
+
 		   <div class="nav">
    	
-				<ul>
+				<ul id="user">
 					<span>RIDE MY WAY</span>
-					<li onclick="copyDiv();">View rides requests</li>
-					<li onclick="copyDiv2();">Add ride</li>
-					<li>Home</li>
+                    <li><a href="index.html" style="color: green;">logout</a></li>
+                    <li><div class="vertical_line"></div></li>
+
+					<li onclick="copyDiv();">view ride's details</li>
+                    <li><div class="vertical_line"></div></li>
+					<li onclick="copyDiv2();">View rides available</li>
+                    <li><div class="vertical_line"></div></li>
+					<li onclick="copyDiv4();">view offers from friends</li>
+                    <li><div class="vertical_line"></div></li>
+					<li onclick=" copyDiv3();">Home</li>
 					
 				</ul>
+
+
+
+
+
 	</div>	
 	</div>
-	<div id="content" class="left-panel" style=" width: 50%;">
+	<div id="content" class="left-panel">
 		fffff
   </div>
-	<div class="left-panel" style="display: none;" id="form">
-        <table border="1 px solid black">
-
+  <div class="left-panel" style="display: none;" id="friend">
+       <form class="form" >
+        <table id="table1" >
+        <caption>Ride offers from friends</caption>
         	<tr>
-        		<th>Departure</th>
-        		<th>destination</th>
-        		<th>price</th>
-        	    <th>Driver name</th>
+        		<th>Name</th>>
+        		<th>location</th>
+        		<th>Desitination</th>
+        	   
+        	    
+
         	</tr>
         	<tr>
-        		<th>makerere</th>
-        		<td>nnhiuhnii</td>
-        		<td>nkikioo</td>
-        		<td>nnhiuhnii</td>
+        	    <td>Shella D</td>
+        		<td>Lugazi</td>
+        		<td>Mukono</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        	    <td>Shella D</td>
+        		<td>Kampala</td>
+        		<td>Masaka</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	
+        </table>
+        </form>
+    </div>
+	<div class="left-panel" style="display: none;" id="form">
+       <form class="form" >
+        <table id="table1" >
+        <caption>Ride offers</caption>
+        	<tr>
+        		
+        		<th>location</th>
+        		<th>Desitination</th>
+        	   
+        	    
+
+        	</tr>
+        	<tr>
+        	
+        		<td>Lugazi</td>
+        		<td>Mukono</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        	
+        		<td>Kampala</td>
+        		<td>Masaka</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        	
+        		<td>makerere</td>
+        		<td>Bukoto</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		
+        		<td>Kikoni</td>
+        		<td>Munyonyo</td>
+        	
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		
+        		<td>Ntinda</td>
+        		<td>makerere</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		
+        		<td>makerere</td>
+        		<td>Ntinda</td>
+        		
+        		<th id="accept"><button>View Details</button></th>
         		
         		
         	</tr>
         </table>
+        </form>
+    </div>
+    	<div class="left-panel" style="display: none;" id="details">
+       <form class="form" >
+        <table id="table1" >
+        <caption>Ride offer Details</caption>
+        	<tr>
+        		<th>Driver's Name</th>
+        		<th>location</th>
+        		<th>Desitination</th>
+        	    <th>time to leave</th>
+        	    
+
+        	</tr>
+        	<tr>
+        		<td>Mutano Jude</td>
+        		<td>Lugazi</td>
+        		<td>Mukono</td>
+        		<td>1:30 am</td>
+        		<th id="accept"><button>Request</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Faith Shella</td>
+        		<td>Kampala</td>
+        		<td>Masaka</td>
+        		<td>8:30 am</td>
+        		<th id="accept"><button>Request</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Mutano Jude</td>
+        		<td>makerere</td>
+        		<td>Bukoto</td>
+        		<td>12:30 pm</td>
+        		<th id="accept"><button>Request</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Mutano Jude</td>
+        		<td>Kikoni</td>
+        		<td>Munyonyo</td>
+        		<td>12:30 am</td>
+        		<th id="accept"><button>Request</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Faith Shella</td>
+        		<td>Ntinda</td>
+        		<td>makerere</td>
+        		<td>12:30 pm</td>
+        		<th id="accept"><button>Request</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Faith Shella</td>
+        		<td>makerere</td>
+        		<td>Ntinda</td>
+        		<td>12:30 pm</td>
+        		<th id="accept"><button>Request</button></th>
+        		
+        		
+        	</tr>
+        </table>
+        </form>
     </div>
     <div class="left-panel" style="display: none;" id="form2">
 		        <form class="form" >
-					<div class="create-ride-header">Add ride2</div>
+					<div class="create-ride-header">Add ride</div>
 					<div class="form-input">
-					<input type="text" class="ride-input" name="ride_name" placeholder="Enter ride name">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter driver name">
+				</div>
+					<div class="form-input">
+					<input type="text" class="ride-input" name="ride_name" placeholder="Enter Start point">
+				</div>
+				<div class="form-input">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter Destination">
 				</div>
 				<div class="form-input">
 					<input type="text" class="ride-input" name="rie_price" placeholder="Enter price">
 				</div>
+				
 				<div class="form-input">
 					<input type="submit" class="create_ride" value="submit">
 				</div>
@@ -60,16 +235,18 @@
     </div>
     <div class="left-panel" style="display: none;" id="form3">
 		        <form class="form" >
-					<div class="create-ride-header">Add ride1</div>
+					<div class="create-ride-header">ride my way</div>
 					<div class="form-input">
-					<input type="text" class="ride-input" name="ride_name" placeholder="Enter ride name">
+					<button class="create_ride" onclick="copyDiv2();"> View rides available</button>
 				</div>
 				<div class="form-input">
-					<input type="text" class="ride-input" name="rie_price" placeholder="Enter price">
+					<button class="create_ride" onclick="copyDiv();"> view ride's details</button>
 				</div>
 				<div class="form-input">
-					<input type="submit" class="create_ride" value="submit">
+					<button class="create_ride" onclick="copyDiv4();"> view offers from friends</button>
 				</div>
+				
+				
 					
 				</form>
     </div>
@@ -84,17 +261,22 @@
 </div>
  <script type="text/javascript">
     function copyDiv(){
-      var firstDivContent = document.getElementById('form');
+      var firstDivContent = document.getElementById('details');
       var secondDivContent = document.getElementById('content');
       secondDivContent.innerHTML = firstDivContent.innerHTML;
     }
      function copyDiv2(){
-      var firstDivContent = document.getElementById('form2');
+      var firstDivContent = document.getElementById('form');
       var secondDivContent = document.getElementById('content');
       secondDivContent.innerHTML = firstDivContent.innerHTML;
     }
     function copyDiv3(){
       var firstDivContent = document.getElementById('form3');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+      function copyDiv4(){
+      var firstDivContent = document.getElementById('friend');
       var secondDivContent = document.getElementById('content');
       secondDivContent.innerHTML = firstDivContent.innerHTML;
     }

@@ -107,23 +107,33 @@
   
 }
 
+.vertical_line{height:30px; width:1px;background:#000;}
+
 .nav{
   margin-top: 240px;
  
   color: #ffffff;
   min-height: 40px;
 }
+#user li{
+  padding-left: 0px;
+}
+#driver li{
+  padding-left: 15px;
+}
 .nav ul span{
   font-size: 40px;
 }
+
 ul li{
+  
   display: inline-block;
   font-size: 20px;
   float: right;
  background-color: rgb(139,69,19);
  position: relative;
- padding-left: 50px;
- padding-right: 50px;
+ padding-left: 5px;
+ padding-right: 5px;
  min-height: 40px;
 
 }
@@ -383,5 +393,33 @@ th {
   text-align: center;
  color: white;
   background-color: black;
+}
+.vertical_line{display:none;}
+#user li{
+  padding-left: 0px;
+}
+#driver li{
+  padding-left: 0px;
+}
+.login-form-btn{
+  min-height: 100px;
+  font-size: 70px;
+  margin-top: 150px;
+}
+.txt1{
+  font-size: 40px;
+}
+.login-form-logo{
+  font-size: 40px;
+  width: 30%;
+}
+.input{
+  width: 92%;
+   min-height: 100px;
+  font-size: 70px;
+  margin-top: 150px;
+}
+.ac{
+  font-size: 70px;
 }
 }

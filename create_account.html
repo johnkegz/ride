@@ -33,16 +33,16 @@
 					</div>
 
 					<div class="wrap-input" >
-						<input class="input" type="password" name="pass" placeholder="EnterPassword">
+						<input class="input" type="password" id="pass" name="pass" placeholder="EnterPassword">
 						<span class="focus-input" data-placeholder="&#xf191;"></span>
 					</div>
 					<div class="wrap-input" >
-						<input class="input" type="password" name="pass" placeholder="Confirm Password">
+						<input class="input" type="password" id="rpass" name="rpass" placeholder="Confirm Password">
 						<span class="focus-input" data-placeholder="&#xf191;"></span>
 					</div>
 				
 				    <div class="container-login100-form-btn">
-						<button class="login-form-btn">
+						<button class="login-form-btn" onclick="login();">
 							CREATE ACCOUNT
 						</button>
 					</div>
@@ -52,6 +52,19 @@
 				</form>
 			</div>
 	</div>
-
+<script>
+	 function login(){
+	 	var name = document.getElementById("u_name").value;
+	 	var pass = document.getElementById("pass").value;
+	     var rpass = document.getElementById("rpass").value;
+	 	if(pass == rpass){
+	 	  alert("password dont match");
+	 	}
+	 	else{
+	 		window.Location.href = "index.html";
+	 	}
+	 }
+	
+</script>
 </body>
 </html>
