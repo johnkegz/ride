@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ride my way</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload=" copyDiv3();">
+
+	<div class="outer3">
+		<div class="wrap-login3">
+				RIDE MY WAY
+			</div>
+		   <div class="nav">
+   	
+				<ul>
+					<span>RIDE MY WAY</span>
+					<li onclick="copyDiv();">View rides requests</li>
+					<li onclick="copyDiv2();">Add ride</li>
+					<li>Home</li>
+					
+				</ul>
+	</div>	
+	</div>
+	<div id="content" class="left-panel" style=" width: 50%;">
+		fffff
+  </div>
+	<div class="left-panel" style="display: none;" id="form">
+        <table border="1 px solid black">
+
+        	<tr>
+        		<th>Departure</th>
+        		<th>destination</th>
+        		<th>price</th>
+        	    <th>Driver name</th>
+        	</tr>
+        	<tr>
+        		<th>makerere</th>
+        		<td>nnhiuhnii</td>
+        		<td>nkikioo</td>
+        		<td>nnhiuhnii</td>
+        		
+        		
+        	</tr>
+        </table>
+    </div>
+    <div class="left-panel" style="display: none;" id="form2">
+		        <form class="form" >
+					<div class="create-ride-header">Add ride2</div>
+					<div class="form-input">
+					<input type="text" class="ride-input" name="ride_name" placeholder="Enter ride name">
+				</div>
+				<div class="form-input">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter price">
+				</div>
+				<div class="form-input">
+					<input type="submit" class="create_ride" value="submit">
+				</div>
+					
+				</form>
+    </div>
+    <div class="left-panel" style="display: none;" id="form3">
+		        <form class="form" >
+					<div class="create-ride-header">Add ride1</div>
+					<div class="form-input">
+					<input type="text" class="ride-input" name="ride_name" placeholder="Enter ride name">
+				</div>
+				<div class="form-input">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter price">
+				</div>
+				<div class="form-input">
+					<input type="submit" class="create_ride" value="submit">
+				</div>
+					
+				</form>
+    </div>
+	<div class="right-panel">
+
+	     <h3><i>Best ride offer</i></h3>
+	</div>
+	<div class="footer">
+
+	&copy;ride my way
+
+</div>
+ <script type="text/javascript">
+    function copyDiv(){
+      var firstDivContent = document.getElementById('form');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+     function copyDiv2(){
+      var firstDivContent = document.getElementById('form2');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+    function copyDiv3(){
+      var firstDivContent = document.getElementById('form3');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+  </script>
+</body>
+</html>

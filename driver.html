@@ -4,43 +4,158 @@
 	<title>ride my way</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onload=" copyDiv3();">
 
 	<div class="outer3">
 		<div class="wrap-login3">
 				RIDE MY WAY
+				<img src="img/k.jpg" class="profile-pic" alt="kegz">
+
 			</div>
+
 		   <div class="nav">
    	
 				<ul>
-					RIDE MY WAY
-					<li>View rides</li>
-					<li>Add ride</li>
-					<li>Home</li>
+					<span>RIDE MY WAY</span>
+					<li onclick="copyDiv();">View requests to rides</li>
+					<li onclick="copyDiv2();">Add ride</li>
+					<li onclick=" copyDiv3();">Home</li>
 					
 				</ul>
 	</div>	
 	</div>
-	<div class="left-panel">
+	<div id="content" class="left-panel">
+		fffff
+  </div>
+	<div class="left-panel" style="display: none;" id="form">
+       <form class="form" >
+        <table id="table1" >
+        <caption>Requests to ride offers</caption>
+        	<tr>
+        		<th>Name</th>
+        		<th>location</th>
+        		<th>Desitination</th>
+        	    <th>time to leave</th>
+        	    
 
-		<form class="form">
-			<div class="create-ride-header">Add ride</div>
-			<div class="form-input">
-			<input type="text" class="ride-input" name="ride_name" placeholder="Enter ride name">
-		</div>
-		<div class="form-input">
-			<input type="text" class="ride-input" name="rie_price" placeholder="Enter price">
-		</div>
-		<div class="form-input">
-			<input type="submit" class="create_ride" value="submit">
-		</div>
-			
-		</form>
-	</div>
+        	</tr>
+        	<tr>
+        		<td>Kasujja P</td>
+        		<td>Lugazi</td>
+        		<td>Mukono</td>
+        		<td>1:30 am</td>
+        		<th id="accept"><button>accept</button><button>reject</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Charity joan</td>
+        		<td>Kampala</td>
+        		<td>Masaka</td>
+        		<td>8:30 am</td>
+        		<th id="accept"><button>accept</button><button>reject</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Muhirere Joseph</td>
+        		<td>makerere</td>
+        		<td>Bukoto</td>
+        		<td>12:30 pm</td>
+        		<th id="accept"><button>accept</button><button>reject</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Atuhaire Mable</td>
+        		<td>Kikoni</td>
+        		<td>Munyonyo</td>
+        		<td>12:30 am</td>
+        		<th id="accept"><button>accept</button><button>reject</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>kalo john</td>
+        		<td>Ntinda</td>
+        		<td>makerere</td>
+        		<td>12:30 pm</td>
+        		<th id="accept"><button>accept</button><button>reject</button></th>
+        		
+        		
+        	</tr>
+        	<tr>
+        		<td>Sam john</td>
+        		<td>makerere</td>
+        		<td>Ntinda</td>
+        		<td>12:30 pm</td>
+        		<th id="accept"><button>accept</button><button>reject</button></th>
+        		
+        		
+        	</tr>
+        </table>
+        </form>
+    </div>
+    <div class="left-panel" style="display: none;" id="form2">
+		        <form class="form" >
+					<div class="create-ride-header">Add ride</div>
+					<div class="form-input">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter driver name">
+				</div>
+					<div class="form-input">
+					<input type="text" class="ride-input" name="ride_name" placeholder="Enter Start point">
+				</div>
+				<div class="form-input">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter Destination">
+				</div>
+				<div class="form-input">
+					<input type="text" class="ride-input" name="rie_price" placeholder="Enter price">
+				</div>
+				
+				<div class="form-input">
+					<input type="submit" class="create_ride" value="submit">
+				</div>
+					
+				</form>
+    </div>
+    <div class="left-panel" style="display: none;" id="form3">
+		        <form class="form" >
+					<div class="create-ride-header">ride my way</div>
+					<div class="form-input">
+					<button class="create_ride" onclick="copyDiv2();"> Add ride offer</button>
+				</div>
+				<div class="form-input">
+					<button class="create_ride" onclick="copyDiv();"> view ride offer requests</button>
+				</div>
+				
+					
+				</form>
+    </div>
 	<div class="right-panel">
 
-	     <h3>Enjoy your ride</h3>
+	     <h3><i>Best ride offer</i></h3>
 	</div>
+	<div class="footer">
 
+	&copy;ride my way
+
+</div>
+ <script type="text/javascript">
+    function copyDiv(){
+      var firstDivContent = document.getElementById('form');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+     function copyDiv2(){
+      var firstDivContent = document.getElementById('form2');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+    function copyDiv3(){
+      var firstDivContent = document.getElementById('form3');
+      var secondDivContent = document.getElementById('content');
+      secondDivContent.innerHTML = firstDivContent.innerHTML;
+    }
+  </script>
 </body>
 </html>

@@ -15,12 +15,15 @@
   position: relative;
   
 }
+.profile-pic{
+  width: 5%; float: right; border-radius: 60%; margin-top: 2%; margin-right: 2%;
+}
 .wrap-login{
   opacity: 0.8;	
   width: 50%;
   border-radius: 50px;  
-  padding: 55px 55px 37px 55px; 
-  background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+  padding: 55px 55px 37px 20px; 
+  background: -webkit-linear-gradient(top, #8B4513, #D2691E);
 }
 
 .login-form-logo {
@@ -105,10 +108,13 @@
 }
 
 .nav{
-  margin-top: 270px;
+  margin-top: 240px;
  
   color: #ffffff;
   min-height: 40px;
+}
+.nav ul span{
+  font-size: 40px;
 }
 ul li{
   display: inline-block;
@@ -123,11 +129,13 @@ ul li{
 }
 .form{
   margin-top: 20px;
+  margin-bottom: 50px;
     background-color: rgb(139,69,19);
    border-radius: 9%;
+   box-shadow: 20px 20px 20px 0px;
 }
 .left-panel{
- 
+ float: left;
   width: 50%;
    display: flex;
  
@@ -175,20 +183,205 @@ ul li{
 }
 /*right panel*/
 .right-panel{
-  top:0;
-  width: 30%;
+   width: 50%;
   float: right;
+}
+.right-panel h3{
+  color: rgb(139,69,19);
+ font-size: 25px;  
+ margin-top:80px;
+ text-shadow: 
 }
 /*end of right panel*/
 
-/*end of driver page*/
-@media only screen and (max-width: 1000px) {
+.footer{
+ position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 
+
+  text-align: center;
+ color: white;
+  background-color: black;
+}
+#table1{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(139,69,19);
+  color: #ffffff;
+  margin-bottom: 50px;
+   border:1 px solid black;
+  
+}
+#form{
+   border: 1px solid black;
+    
+}
+td {
+   padding: 10px; 
+    border: none;
+}
+th {
+   padding: 10px; 
+    border: none;
+}
+caption{
+  color: #ffffff;
+}
+/*end of driver page*/
+/*content*/
+#content{
+   width: 50%;
+}
+/*end of content*/
+@media only screen and (max-width: 1000px) {
+.profile-pic{
+  width: 20%;  border-radius: 60%; margin-top: 10%; margin-right: 40%;
+}
 .wrap-login{
   width: 100%;
  height: 90vh;
   padding: 0px 0px 0px 0px;
 
 
+}
+/*outer div*/
+.outer3 {
+  width: 100%;  
+  height: 30vh;
+
+}
+/*end of outer div*/
+/*nav*/
+
+.nav{
+  margin-top: 400px;
+  
+  color: #ffffff;
+  min-height: 40px;
+}
+ul li{
+  font-size: 40px;
+}
+/*end of nav*/
+/*content*/
+#content{
+   width: 100%;
+}
+/*end of content*/
+/*panel left*/
+.left-panel{
+ float: none;
+  width: 200%;
+   display: block;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.right-panel{
+ float: none;
+  width: 100%;
+   display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.form{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+    background-color: rgb(139,69,19);
+   border-radius: 9%;
+   box-shadow: 20px 20px 20px 0px;
+}
+/*end of panel left*/
+#table1{
+  font-size: 50px;
+  width: 100%;
+  padding: 0px;
+  border-radius: 10px;
+  background-color: rgb(139,69,19);
+  color: #ffffff;
+  margin-bottom: 50px;
+  border:1 px solid black; padding:0; 
+  
+}
+td {
+   padding: 10px; 
+    border: 1px solid black;
+}
+th {
+   padding: 10px; 
+    border: 1px solid black;
+}
+.form-input button{
+  width: 92%;
+  min-height: 100px;
+  font-size: 60px;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.create-ride-header{
+   font-size: 60px;
+}
+.right-panel h3{
+  font-size: 60px;
+}
+.form-input{
+ width: 100%;
+  position: relative;
+  margin-bottom: 90px;
+}
+.ride-input{
+ width: 93%;
+  font-size: 60px;
+
+ 
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  
+  height: 90px;
+  border-radius: 25px;
+}
+.create_ride{
+   font-size: 60px;
+  color: black;
+ 
+ 
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 97px;
+  border-radius: 25px;
+  margin-bottom: 70px;
+}
+#accept button{
+  size: 40px;
+  font-size: 40px;
+  height: 80px;
+  padding: 0px;
+}
+#accept{
+  padding: 0px;
+  margin: 0;
+
+}
+.footer{
+ position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+ font-size: 80px;
+
+  text-align: center;
+ color: white;
+  background-color: black;
 }
 }
