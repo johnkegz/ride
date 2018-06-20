@@ -8,6 +8,13 @@ class Get_ride(MethodView):
             return jsonify({'rides':self.rides})
         rids = [ride for ride in self.rides if ride['name'] == name]
         return jsonify({'ride' : rids[0]})
+    def post(self):
+        ride = {'name' : request.json['name']}
+        self.rides.append(ride)
+        return jsonify({'rides' : self.rides})
+	    
+	    
+
 
 	    
         

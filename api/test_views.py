@@ -17,8 +17,12 @@ class TestViews(unittest.TestCase):
         #self.assertEqual(result.status_code, 404)
         #self.assertIn("kalyang", result.data)
     def test_get_specific_ride(self):    
-        result = self.client().get('api/v1/rides/9')
+        result = self.client().get('api/v1/rides/kalyango')
         self.assertEqual(result.status_code, 200)
+    def test_create_ride(self):
+        result = self.client().get('api/v1/rides', data={"name" : ""})
+        self.assertEqual(result.status_code, 200)
+        self.assertIn('name', str(result.data))
     
       
 
