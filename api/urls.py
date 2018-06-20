@@ -7,8 +7,8 @@ class Get_urls:
         
 
         All_rides_view = Get_ride.as_view('All_rides')
-        #One_ride_view = Get_ride.as_view('Specific_ride')
+        One_ride_view = Get_ride.as_view('Specific_ride')
 
         ride.add_url_rule('/api/v1/rides', view_func=All_rides_view, defaults={'name': None}, methods=['Get',])
-        #ride.add_url_rule('/api/v1/rides/<string:name>', view_func=One_ride_view, defaults={'id': None}, method=['Get',])
+        ride.add_url_rule('/api/v1/rides/<string:name>', view_func=One_ride_view, methods=['Get',])
 
