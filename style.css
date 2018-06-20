@@ -108,7 +108,7 @@
 }
 
 .vertical_line{height:30px; width:1px;background:#000;}
-
+.horizontal{height:2px; width:1px;background:#000;}
 .nav{
   margin-top: 240px;
  
@@ -337,6 +337,7 @@ th {
   margin-left: 40px;
 }
 .create-ride-header{
+  text-align: center;
    font-size: 60px;
 }
 .right-panel h3{
