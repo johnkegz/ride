@@ -9,4 +9,6 @@ class Get_ride(MethodView):
         {'name' : 'kalyango','start':'muk','destination':'ntida'},
         ]
     def get(self):
-        return jsonify({"data": self.rides})
+       
+            return jsonify({"data": self.rides})
+        
