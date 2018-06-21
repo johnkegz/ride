@@ -12,9 +12,4 @@ class Get_ride(MethodView):
         ride = {'name' : request.json['name']}
         self.rides.append(ride)
         return jsonify({'rides' : self.rides})
-	    
-	    
-
-
-	    
         
