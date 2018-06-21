@@ -1,29 +1,24 @@
-import unittest 
-
+# -*- coding: utf-8 -*-
+"""This is the main module"""
+import unittest
+import json
 from app import APP
 
 class TestViews(unittest.TestCase):
-    ri = {'name' : 'kalyango','start':'muk','destination':'ntida'},
-         
-         
+    """
+    Class defines test cases
+    """
     def setUp(self):
-        self.ride = APP 
+        """
+        initializing
+        """
+        self.ride = APP
         self.client = self.ride.test_client
-        
-    def test_get_all_clients(self):
-        result = self.client().get('api/v1/rides')
-       
+    def test_get_specific_ride(self):
+        """
+        tesing for get specific ride
+        """
+        result = self.client().get('api/v1/rides/2')
         self.assertEqual(result.status_code, 200)
-        #self.assertEqual(result.status_code, 404)
-        #self.assertIn("kalyang", result.data)
-    def test_get_specific_ride(self):    
-        result = self.client().get('api/v1/rides/kalyango')
-        self.assertEqual(result.status_code, 200)
-    def test_create_ride(self):
-        result = self.client().get('api/v1/rides', data={"name" : ""})
-        self.assertEqual(result.status_code, 200)
-        self.assertIn('name', str(result.data))
-    
-      
-
-    
+        self.assertTrue(result.json["ride"])
+  
