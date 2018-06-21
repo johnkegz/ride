@@ -1,20 +1,24 @@
+# -*- coding: utf-8 -*-
+"""Module defines views """
 from flask import jsonify, request
 from flask.views import MethodView
-
-class Get_ride(MethodView):
-    rides =[{'name' : 'kalyango','start':'muk','destination':'ntida'},{'name' : 'kalyango2','start':'muk','destination':'ntida'}, {'name' : 'kalyango3','start':'muk','destination':'ntida'}, {'name' : 'kalyango4','start':'muk','destination':'ntida'}]
-    def get(self, name):
-        if name == None:
-            return jsonify({'rides':self.rides})
-        rids = [ride for ride in self.rides if ride['name'] == name]
-        return jsonify({'ride' : rids[0]})
-    def post(self):
-        ride = {'name' : request.json['name']}
-        self.rides.append(ride)
-        return jsonify({'rides' : self.rides})
-	    
-	    
-
-
-	    
+class GetRide(MethodView):
+    """
+    class that defines views
+    """
+    reqs = [
+        {'id':1, 'ride_id':4, 'passenger_name':'Peter', 'phone_number':'0752067415'},
+        {'id':2, 'ride_id':1, 'passenger_name':'Peter', 'phone_number':'0782699260'},
+        {'id':3, 'ride_id':3, 'passenger_name':'Peter', 'phone_number':'0757597843'},
+        ]
+  
+    def post(self, ride_id):
+        """
+        method for all post requests
+        """
+        if not request.json:
+            return jsonify({'error' : "not a json request"}), 400
+        req = {'id':request.json['id'], 'ride_id':ride_id, 'passenger_name':request.json['passenger_name'], 'phone_number':request.json['phone_number']}
+        self.reqs.append(req)
+        return jsonify({'requests' : self.reqs})
         
