@@ -19,8 +19,6 @@ class GetRide(MethodView):
         """
         if ride_id == None:
             return jsonify({'rides':self.rides})
-        rids = [ride for ride in self.rides if ride['id'] == ride_id]
-        return jsonify({'ride' : rids[0]})
-        
+       
   
         
