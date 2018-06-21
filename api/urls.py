@@ -1,15 +1,21 @@
-from views import Get_ride
+# -*- coding: utf-8 -*-
+"""
+Module decorates views to urls
+"""
+from views import GetRide
 
 
-class Get_urls:
+class GetUrls:
+    """
+    Method that views with urls
+    """
     @staticmethod
     def fetch_urls(ride):
+        """
+        Method that views with urls
+        """
+        rides_view = GetRide.as_view('rides')
+       
+
+        ride.add_url_rule('/api/v1/rides', view_func=rides_view, defaults={'ride_id': None}, methods=['GET',])
         
-
-        All_rides_view = Get_ride.as_view('All_rides')
-        One_ride_view = Get_ride.as_view('Specific_ride')
-
-        ride.add_url_rule('/api/v1/rides', view_func=All_rides_view, defaults={'name': None}, methods=['GET',])
-        ride.add_url_rule('/api/v1/rides/<string:name>', view_func=One_ride_view, methods=['GET',])
-        ride.add_url_rule('/api/v1/rides', view_func=One_ride_view, methods=['POST',])
-

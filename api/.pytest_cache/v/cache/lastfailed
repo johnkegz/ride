@@ -1,3 +1,4 @@
 {
+  "test_views.py::TestViews::test_join_aride": true,
   "tests.py::TestViews::test_get_all_clients": true
 }
