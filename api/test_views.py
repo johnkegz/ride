@@ -37,3 +37,11 @@ class TestViews(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["rides"])
         self.assertIn('time_to_leave', str(result.data))
+    def test_requests(self):
+        """
+        testing for request to join a ride
+        """
+        result = self.client().post('/api/v1/rides/2/requests', content_type="application/json", data=json.dumps(dict(id=4, passenger_name="Junior Sara", phone_number="078966857")))
+        self.assertEqual(result.status_code, 200)
+        self.assertTrue(result.json["requests"])
+        self.assertIn(b"ride_id", result.data)
