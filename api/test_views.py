@@ -20,7 +20,6 @@ class TestViews(unittest.TestCase):
         method for testing get all rides
         """
         result = self.client().get('api/v1/rides')
-
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["rides"])
 
