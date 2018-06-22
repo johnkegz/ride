@@ -23,4 +23,11 @@ class TestViews(unittest.TestCase):
 
         self.assertEqual(result.status_code, 200)
         self.assertTrue(result.json["rides"])
-   
+
+    def test_get_specific_ride(self):
+        """
+        tesing for get specific ride
+        """
+        result = self.client().get('api/v1/rides/2')
+        self.assertEqual(result.status_code, 200)
+        self.assertTrue(result.json["ride"])

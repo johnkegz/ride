@@ -16,4 +16,5 @@ class GetUrls:
         """
         rides_view = GetRide.as_view('rides')
         ride.add_url_rule('/api/v1/rides', view_func=rides_view, defaults={'ride_id': None}, methods=['GET',])
-        
+        ride.add_url_rule('/api/v1/rides/<int:ride_id>', view_func=rides_view, methods=['GET',])
+      
