@@ -44,6 +44,6 @@ class TestViews(unittest.TestCase):
         """
         result = self.client().post('/api/v1/rides/2/requests', content_type="application/json", data=json.dumps(dict(id=4, passenger_name="Junior Sara", phone_number="078966857")))
         
-        self.assertTrue(result.json["reqs"])
+        self.assertTrue(result.json["requests"])
         self.assertIn(b"ride_id", result.data)
         
