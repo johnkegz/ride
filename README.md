@@ -16,25 +16,25 @@ post man
 
 ### Installing
 
--load heroku website
--create account
--sign in 
--create an app and give it a unit name
--integrate it with git hub
--allow automatic update
+ * load heroku website
+ * eate account
+ * sign in
+ * create an app and give it a unit name
+ * integrate it with git hub
+ * allow automatic update
 
 ## Running the tests
 
-Tests are run using post man for client end forexample
- -get all rides is run by running the url
+-Tests are run using post man for client end forexample
+ * get all rides is run by running the url
  api/v1/rides
- -get all rides is run by running the url
+ * get all rides is run by running the url
  api/v1/rides/<int:id>
- -for create ride offer this json input data is put in postman
+ * for create ride offer this json input data is put in postman
  {"id":4, "time_to_leave":"1:29 pm", "price":"4000 /=", "start":"Gayaza", "destination":"matuga", "Driver_name":"kalyango john"}
- -for join offer this json file is used
+ * for join offer this json file is used
  {"id"=4, "passenger_name":"Junior Sara", "phone_number":"078966857"
-Unit tests are done in test_views.py using unittest package
+-Unit tests are done in test_views.py using unittest package
 
 
 ## Deployment
@@ -52,7 +52,7 @@ The system is deployed on heroku
 
 ## Versioning
 
-I use git hub for versioning. 
+ * I use git hub for versioning.
 
 ## Authors
 
