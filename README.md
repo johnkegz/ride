@@ -62,6 +62,6 @@ The system is deployed on heroku
 
 ## Acknowledgments
 
-* Thanks to ASSIIMWE INNOCENT MY Learning FACILITATOR(LFA)
+* Thanks to ASSIIMWE INNOCENT MY Learning Facilitator(LFA)
 
 
