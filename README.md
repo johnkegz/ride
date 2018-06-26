@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/johnkegz/ride/badge.svg)](https://coveralls.io/github/johnkegz/ride)
 # Project Title
 
-One Paragraph of project description goes here
+RIDE MAY WAY
 
 ## Getting Started
 
