@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 web: gunicorn --chdir api app:APP
-=======
-web: gunicorn app:APP
->>>>>>> b0e12a7a9c43c17af2b30953538c82d95c777fd1
