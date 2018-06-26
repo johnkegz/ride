@@ -1,0 +1,6 @@
+[
+  "test_views.py::TestViews::test_create_ride",
+  "test_views.py::TestViews::test_get_all_clients",
+  "test_views.py::TestViews::test_get_specific_ride",
+  "test_views.py::TestViews::test_requests"
+]
