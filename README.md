@@ -34,6 +34,7 @@ post man
  {"id":4, "time_to_leave":"1:29 pm", "price":"4000 /=", "start":"Gayaza", "destination":"matuga", "Driver_name":"kalyango john"}
  * for join offer this json file is used
  {"id"=4, "passenger_name":"Junior Sara", "phone_number":"078966857"
+ 
 -Unit tests are done in test_views.py using unittest package
 
 
