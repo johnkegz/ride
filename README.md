@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/johnkegz/ride/badge.svg)](https://coveralls.io/github/johnkegz/ride)
 ## Project Title
 
-#RIDE MAY WAY
+RIDE MAY WAY
 
 ### Prerequisites
 
@@ -12,6 +12,7 @@ You need to be having Heroku for the app to work
 Flask==1.0.2
 pytest==3.6.2
 pylint==1.9.2
+post man
 
 ### Installing
 
@@ -22,27 +23,19 @@ pylint==1.9.2
 -integrate it with git hub
 -allow automatic update
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Tests are run using post man for client end forexample
+ -get all rides is run by running the url
+ api/v1/rides
+ -get all rides is run by running the url
+ api/v1/rides/<int:id>
+ -for create ride offer this json input data is put in postman
+ {"id":4, "time_to_leave":"1:29 pm", "price":"4000 /=", "start":"Gayaza", "destination":"matuga", "Driver_name":"kalyango john"}
+ -for join offer this json file is used
+ {"id"=4, "passenger_name":"Junior Sara", "phone_number":"078966857"
+Unit tests are done in test_views.py using unittest package
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -50,13 +43,12 @@ The system is deployed on heroku
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+* Flask micro framework 
+* tested using unit tests (unittest package)
+* plylint and PEP8 standards
+* code climate for code maintainability 
+* coverall.io for code cverage
+* travis for testing whether tests are passing
 
 ## Versioning
 
@@ -68,6 +60,6 @@ I use git hub for versioning.
 
 ## Acknowledgments
 
-* tHANKS TO ASSIIMWE INNOCENT MY Learning FACILITATOR(LFA)
+* Thanks to ASSIIMWE INNOCENT MY Learning FACILITATOR(LFA)
 
 
